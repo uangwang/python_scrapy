@@ -1,0 +1,8 @@
+1. 创建爬虫的项目: scrapy startproject 项目名  注意：项目名不能有中文、空格、特殊字符、不能以数字开头
+
+2. 创建爬虫文件: scrapy genspider 爬虫文件的名字 要爬取网站域名  一般情况下不用添加http://
+                 因为start_urls的值是根据allowed_domains修改的  所以添加了http://会导致allowed_domains的值不匹配
+                 要在spiders文件夹下创建爬虫文件 cd 项目名\项目名\spiders
+
+3. 运行爬虫文件: scrapy crawl 爬虫文件的名字
+eg: scrapy crawl baidu
